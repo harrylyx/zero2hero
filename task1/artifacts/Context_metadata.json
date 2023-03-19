@@ -32,12 +32,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"task1/utils.sol": {
-			"keccak256": "0x97abed8828b918c01fc383084827f3bb1d80119bff6c68aa88c111baf2e6580d",
+		"task1/interface.sol": {
+			"keccak256": "0xb9bbf4c02fb5f7a8f6b55978ad1e2288d2dc84612781d16c0531b5cd564167ae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6ec2c4d70edea157f95e066b8dea675a45c607a980b7385af4c42c78e4bf3480",
-				"dweb:/ipfs/QmPqMdwVtQnzKEp5euYnEBGmhoC24AabTMQcY5F9Azeuvt"
+				"bzz-raw://90dedec6d25617c8f5f08eadc81fbda788445a346ec4d09204cf6a399ac45a4b",
+				"dweb:/ipfs/QmZY8wNn38B9UjJxrAqByuWcy7D311exMNWWpxyP9RZD5Z"
+			]
+		},
+		"task1/utils.sol": {
+			"keccak256": "0x4f99ad7ab591188d40afcfc814bddc5d24970907e61bff0f6eac955891ec03ac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e21689f368d8265b0c723c4434d20f6e62ad0754a3841dea842215dffbd4b85",
+				"dweb:/ipfs/QmS4PGzbqpHwaSKRUjdRAfy7Bae8kAF8bM7Bog21VN6TL1"
 			]
 		}
 	},

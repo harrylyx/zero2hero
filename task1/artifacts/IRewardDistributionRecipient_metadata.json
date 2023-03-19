@@ -25,6 +25,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "notifyRewardAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -40,6 +53,32 @@
 			{
 				"inputs": [],
 				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardDistribution",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_rewardDistribution",
+						"type": "address"
+					}
+				],
+				"name": "setRewardDistribution",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -61,9 +100,6 @@
 		"devdoc": {
 			"kind": "dev",
 			"methods": {
-				"constructor": {
-					"details": "Initializes the contract setting the deployer as the initial owner."
-				},
 				"owner()": {
 					"details": "Returns the address of the current owner."
 				},
@@ -84,7 +120,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"task1/utils.sol": "Ownable"
+			"task1/AMM.sol": "IRewardDistributionRecipient"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -98,6 +134,22 @@
 		"remappings": []
 	},
 	"sources": {
+		"task1/AMM.sol": {
+			"keccak256": "0xdc3970cf8026b7af55b27543899804c2634e2773df893dabf06682c59b456dbe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3cab792af78b2228160ff00b49855ac4fcb4cc65c0e9b0ecaf8d00627c999abf",
+				"dweb:/ipfs/QmNnwTskPqj1r2CrDBzXGaPSpTymDC8ZN9cMmpS1TBNvh9"
+			]
+		},
+		"task1/BigDoge.sol": {
+			"keccak256": "0x35fa1bc95cd2170b0b0118c59c489985babb37441712a5c3643f7408ff339e2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c3f5b6c9dc20713cbb7a918f027c17e168c5d950294f2228d6d91957638f4a5",
+				"dweb:/ipfs/QmUQPNRWwStVvHQZLzqM1SegREgpAscVGygyNG6X9KoWn8"
+			]
+		},
 		"task1/interface.sol": {
 			"keccak256": "0xb9bbf4c02fb5f7a8f6b55978ad1e2288d2dc84612781d16c0531b5cd564167ae",
 			"license": "MIT",

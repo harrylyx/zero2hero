@@ -1,0 +1,619 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "lptoken_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "starttime_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardPaid",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Staked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "DURATION",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "earned",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "exit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastTimeRewardApplicable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastUpdateTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lpt",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "notifyRewardAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "periodFinish",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardDistribution",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardPerToken",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardPerTokenStored",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "rewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_rewardDistribution",
+						"type": "address"
+					}
+				],
+				"name": "setRewardDistribution",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "stake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "starttime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userRewardPerTokenPaid",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"balanceOf(address)": {
+					"details": "返回账户余额",
+					"params": {
+						"account": "账户地址"
+					},
+					"returns": {
+						"_0": "余额"
+					}
+				},
+				"constructor": {
+					"details": "构造函数",
+					"params": {
+						"lptoken_": "LPtoken地址",
+						"starttime_": "开始时间",
+						"token_": "token地址"
+					}
+				},
+				"earned(address)": {
+					"details": "用户已奖励的数量",
+					"params": {
+						"account": "用户地址"
+					}
+				},
+				"exit()": {
+					"details": "退出"
+				},
+				"getReward()": {
+					"details": "获取奖励"
+				},
+				"lastTimeRewardApplicable()": {
+					"details": "返回奖励的最后期限",
+					"returns": {
+						"_0": "最后期限"
+					}
+				},
+				"notifyRewardAmount(uint256)": {
+					"details": "通知奖励数量",
+					"params": {
+						"reward": "奖励数量"
+					}
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"rewardPerToken()": {
+					"details": "每个质押Token的奖励",
+					"returns": {
+						"_0": "奖励数量"
+					}
+				},
+				"stake(uint256)": {
+					"details": "质押指定数量的token",
+					"params": {
+						"amount": "质押数量"
+					}
+				},
+				"totalSupply()": {
+					"details": "返回总量",
+					"returns": {
+						"_0": "总量"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				},
+				"withdraw(uint256)": {
+					"details": "提款指定数额的质押token",
+					"params": {
+						"amount": "质押数量"
+					}
+				}
+			},
+			"title": "LP Token矿池合约",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"DURATION()": {
+					"notice": "时间周期 = 30天"
+				},
+				"lastTimeRewardApplicable()": {
+					"notice": "如果没有到达结束时间,返回当前时间"
+				},
+				"lastUpdateTime()": {
+					"notice": "最后更新时间"
+				},
+				"lpt()": {
+					"notice": "GoCash LP Token合约地址"
+				},
+				"periodFinish()": {
+					"notice": "结束时间"
+				},
+				"rewardPerTokenStored()": {
+					"notice": "储存奖励数量"
+				},
+				"rewardRate()": {
+					"notice": "每秒奖励数量"
+				},
+				"rewards(address)": {
+					"notice": "用户未发放的奖励数量"
+				},
+				"starttime()": {
+					"notice": "开始时间"
+				},
+				"userRewardPerTokenPaid(address)": {
+					"notice": "每个质押Token支付用户的奖励"
+				}
+			},
+			"notice": "周期30天",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task1/AMM.sol": "LPTokenPool"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task1/AMM.sol": {
+			"keccak256": "0xdc3970cf8026b7af55b27543899804c2634e2773df893dabf06682c59b456dbe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3cab792af78b2228160ff00b49855ac4fcb4cc65c0e9b0ecaf8d00627c999abf",
+				"dweb:/ipfs/QmNnwTskPqj1r2CrDBzXGaPSpTymDC8ZN9cMmpS1TBNvh9"
+			]
+		},
+		"task1/BigDoge.sol": {
+			"keccak256": "0x35fa1bc95cd2170b0b0118c59c489985babb37441712a5c3643f7408ff339e2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c3f5b6c9dc20713cbb7a918f027c17e168c5d950294f2228d6d91957638f4a5",
+				"dweb:/ipfs/QmUQPNRWwStVvHQZLzqM1SegREgpAscVGygyNG6X9KoWn8"
+			]
+		},
+		"task1/interface.sol": {
+			"keccak256": "0xb9bbf4c02fb5f7a8f6b55978ad1e2288d2dc84612781d16c0531b5cd564167ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://90dedec6d25617c8f5f08eadc81fbda788445a346ec4d09204cf6a399ac45a4b",
+				"dweb:/ipfs/QmZY8wNn38B9UjJxrAqByuWcy7D311exMNWWpxyP9RZD5Z"
+			]
+		},
+		"task1/utils.sol": {
+			"keccak256": "0x4f99ad7ab591188d40afcfc814bddc5d24970907e61bff0f6eac955891ec03ac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e21689f368d8265b0c723c4434d20f6e62ad0754a3841dea842215dffbd4b85",
+				"dweb:/ipfs/QmS4PGzbqpHwaSKRUjdRAfy7Bae8kAF8bM7Bog21VN6TL1"
+			]
+		}
+	},
+	"version": 1
+}

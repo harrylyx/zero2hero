@@ -1,0 +1,182 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lpt",
+				"outputs": [
+					{
+						"internalType": "contract IBEP20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "stake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"balanceOf(address)": {
+					"details": "返回账户余额",
+					"params": {
+						"account": "账户地址"
+					},
+					"returns": {
+						"_0": "余额"
+					}
+				},
+				"stake(uint256)": {
+					"details": "把shushi抵押到Boardroom",
+					"params": {
+						"amount": "质押数量"
+					}
+				},
+				"totalSupply()": {
+					"details": "返回总量",
+					"returns": {
+						"_0": "总量"
+					}
+				},
+				"withdraw(uint256)": {
+					"details": "赎回LPToken",
+					"params": {
+						"amount": "赎回数量"
+					}
+				}
+			},
+			"stateVariables": {
+				"_balances": {
+					"details": "余额映射"
+				},
+				"_totalSupply": {
+					"details": "质押总量"
+				}
+			},
+			"title": "LP质押合约",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"lpt()": {
+					"notice": "GoCash LP Token合约地址"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task1/AMM.sol": "LPTokenWrapper"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task1/AMM.sol": {
+			"keccak256": "0xdc3970cf8026b7af55b27543899804c2634e2773df893dabf06682c59b456dbe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3cab792af78b2228160ff00b49855ac4fcb4cc65c0e9b0ecaf8d00627c999abf",
+				"dweb:/ipfs/QmNnwTskPqj1r2CrDBzXGaPSpTymDC8ZN9cMmpS1TBNvh9"
+			]
+		},
+		"task1/BigDoge.sol": {
+			"keccak256": "0x35fa1bc95cd2170b0b0118c59c489985babb37441712a5c3643f7408ff339e2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c3f5b6c9dc20713cbb7a918f027c17e168c5d950294f2228d6d91957638f4a5",
+				"dweb:/ipfs/QmUQPNRWwStVvHQZLzqM1SegREgpAscVGygyNG6X9KoWn8"
+			]
+		},
+		"task1/interface.sol": {
+			"keccak256": "0xb9bbf4c02fb5f7a8f6b55978ad1e2288d2dc84612781d16c0531b5cd564167ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://90dedec6d25617c8f5f08eadc81fbda788445a346ec4d09204cf6a399ac45a4b",
+				"dweb:/ipfs/QmZY8wNn38B9UjJxrAqByuWcy7D311exMNWWpxyP9RZD5Z"
+			]
+		},
+		"task1/utils.sol": {
+			"keccak256": "0x4f99ad7ab591188d40afcfc814bddc5d24970907e61bff0f6eac955891ec03ac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e21689f368d8265b0c723c4434d20f6e62ad0754a3841dea842215dffbd4b85",
+				"dweb:/ipfs/QmS4PGzbqpHwaSKRUjdRAfy7Bae8kAF8bM7Bog21VN6TL1"
+			]
+		}
+	},
+	"version": 1
+}
