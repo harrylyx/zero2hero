@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"task1/utils.sol": "SafeMath"
+			"task1/utils.sol": "Address"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
