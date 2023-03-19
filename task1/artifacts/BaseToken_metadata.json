@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "version",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenCreated",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task1/BigDoge.sol": "BaseToken"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task1/BigDoge.sol": {
+			"keccak256": "0x35fa1bc95cd2170b0b0118c59c489985babb37441712a5c3643f7408ff339e2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c3f5b6c9dc20713cbb7a918f027c17e168c5d950294f2228d6d91957638f4a5",
+				"dweb:/ipfs/QmUQPNRWwStVvHQZLzqM1SegREgpAscVGygyNG6X9KoWn8"
+			]
+		},
+		"task1/interface.sol": {
+			"keccak256": "0xb9bbf4c02fb5f7a8f6b55978ad1e2288d2dc84612781d16c0531b5cd564167ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://90dedec6d25617c8f5f08eadc81fbda788445a346ec4d09204cf6a399ac45a4b",
+				"dweb:/ipfs/QmZY8wNn38B9UjJxrAqByuWcy7D311exMNWWpxyP9RZD5Z"
+			]
+		},
+		"task1/utils.sol": {
+			"keccak256": "0x4f6c53fea5cd31569751d35df739b99a49075ef47dd6ebc7d43ff883e552e55f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ecf24b0eb8b0f5449059704cc17ca5ed719c57b7b5bce67ce895481bf17d806",
+				"dweb:/ipfs/Qmcq2ypJnX8TsEREmHiheMY5uFahh4zDQpicJwsFribLzz"
+			]
+		}
+	},
+	"version": 1
+}
