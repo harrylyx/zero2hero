@@ -6,7 +6,6 @@ import "./interface.sol";
 import "./utils.sol";
 
 
-
 abstract contract BaseToken {
     event TokenCreated(
         address indexed owner,
@@ -16,7 +15,7 @@ abstract contract BaseToken {
 }
 
 
-contract BigDoge is IBEP20, Ownable, BaseToken {
+contract BigSuShi is IBEP20, Ownable, BaseToken {
     using SafeMath for uint256;
 
     uint256 public constant VERSION = 1;
@@ -36,10 +35,10 @@ contract BigDoge is IBEP20, Ownable, BaseToken {
         // uint256 totalSupply_,
         //address serviceFeeReceiver_
     ) payable {
-        _name = "BigDoge Coin";
-        _symbol = "BDOGE";
+        _name = "Big SuShi Coin";
+        _symbol = "BSUSHI";
         _decimals = 18;
-        _totalSupply = 100000000*10**18;
+        _totalSupply = 1000000000*10**18;
         _balances[msg.sender] = _totalSupply;
 
         emit Transfer(address(0), msg.sender, _totalSupply);

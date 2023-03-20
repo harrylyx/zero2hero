@@ -451,7 +451,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"task1/BigDoge.sol": "BigDoge"
+			"task1/BigSuShi.sol": "BigSuSHI"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -465,12 +465,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"task1/BigDoge.sol": {
-			"keccak256": "0xf3d89c2ac0678b83e7bf19b490d5d7ae399987a9ad19a077267a303288a18d2e",
+		"task1/BigSuShi.sol": {
+			"keccak256": "0xe8f2ba629f1531aa104161c00837af8c2ab1cd961035a1018e195bd5ad8dd52b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b5c987437b5488d41d2097e0b2a81d72f82ff740dedd7318094aafd9982d94b",
-				"dweb:/ipfs/QmfRefRNzP2KnD7RXtEcNdsDTQa4ybuY8oUh2KjPT7M5GD"
+				"bzz-raw://ea3f283a75f62eec6da25821bb45bc82792b956818fbb570cb004fa8ca6f2ee0",
+				"dweb:/ipfs/QmZxDbast7HfQBHLQaW5kDPxX8BxXaSxrG2uNRV7nZxrhk"
 			]
 		},
 		"task1/interface.sol": {

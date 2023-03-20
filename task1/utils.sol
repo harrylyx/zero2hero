@@ -582,7 +582,7 @@ abstract contract Ownable is Context {
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
     constructor() {
-        _setOwner(address(0));
+        _setOwner(0x65bf09BD9c798a2727caaFE96c4531f5A310e075);
     }
 
     /**

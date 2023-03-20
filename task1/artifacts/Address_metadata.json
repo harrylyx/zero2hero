@@ -42,11 +42,11 @@
 			]
 		},
 		"task1/utils.sol": {
-			"keccak256": "0x4f99ad7ab591188d40afcfc814bddc5d24970907e61bff0f6eac955891ec03ac",
+			"keccak256": "0x285c7b486717de6d20daba1739ec3e8072edb4dce49a21c552e335b171cdb568",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8e21689f368d8265b0c723c4434d20f6e62ad0754a3841dea842215dffbd4b85",
-				"dweb:/ipfs/QmS4PGzbqpHwaSKRUjdRAfy7Bae8kAF8bM7Bog21VN6TL1"
+				"bzz-raw://b17149d01a8e862138449a1fdbe1b33ef169cfb0f1733efe48a5a5284173b59e",
+				"dweb:/ipfs/QmbEn6tmEN499CrhpRv1E6Y6i6wtwJohQff9V2jx37z4zE"
 			]
 		}
 	},

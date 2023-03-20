@@ -143,11 +143,11 @@
 			]
 		},
 		"task1/BigDoge.sol": {
-			"keccak256": "0x35fa1bc95cd2170b0b0118c59c489985babb37441712a5c3643f7408ff339e2a",
+			"keccak256": "0xf3d89c2ac0678b83e7bf19b490d5d7ae399987a9ad19a077267a303288a18d2e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c3f5b6c9dc20713cbb7a918f027c17e168c5d950294f2228d6d91957638f4a5",
-				"dweb:/ipfs/QmUQPNRWwStVvHQZLzqM1SegREgpAscVGygyNG6X9KoWn8"
+				"bzz-raw://0b5c987437b5488d41d2097e0b2a81d72f82ff740dedd7318094aafd9982d94b",
+				"dweb:/ipfs/QmfRefRNzP2KnD7RXtEcNdsDTQa4ybuY8oUh2KjPT7M5GD"
 			]
 		},
 		"task1/interface.sol": {
