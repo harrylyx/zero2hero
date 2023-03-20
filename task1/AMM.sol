@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "./interface.sol";
 import "./utils.sol";
-import "./BigDoge.sol";
+import "./XiaoNaoFu.sol";
 
 abstract contract IRewardDistributionRecipient is Ownable {
     address public rewardDistribution;
